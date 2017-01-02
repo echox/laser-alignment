@@ -15,6 +15,7 @@ height=20;
 servo_width=42;
 servo_nipple_height=2;
 dia_servo_nipple=2;
+cut_width=2;
 
 // ------ don't modify behind this ------
 
@@ -85,4 +86,5 @@ difference() {
     }
     pipe(-90);
     pipe(-40);
+  #  translate([-dia_outer/2,-cut_width/2,wall+wall/1.5]) cube([dia_outer,cut_width,height*2]);
 }
